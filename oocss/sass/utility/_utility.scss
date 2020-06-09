@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*----------------------------------------------------
+
+	汎用クラスをまとめたファイルです。
+	基本的に変更することはありません。
+	汎用クラスを追加したい場合、_utility_●●.scssという
+	別ファイルを生成し、追加してください。
+
+	命名規則として、クラス名の頭に 
+	u-* (utilityのu)という接頭辞をつけることを推奨します。
+
+----------------------------------------------------*/
+
+.u-align-l {
+	text-align: left;
+}
+.u-align-c {
+	text-align: center;
+}
+.u-align-r {
+	text-align: right;
+}
+
+
+/*--------------------------
+	padding margin 調整用
+--------------------------*/
+$i: 60; // padding marginの最大値
+@while $i > 0 {
+	.u-mt#{$i} {
+		margin-top: #{$i}px !important;
+	}
+	.u-mb#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+	.u-pt#{$i} {
+		padding-top: #{$i}px !important;
+	}
+	.u-pb#{$i} {
+		padding-bottom: #{$i}px !important;
+	}	
+	
+	@if $i > 60{
+		$i: $i / 2;
+	} @elseif $i > 20 {
+		$i: $i - 15;
+	} @else {
+		$i: $i - 5;
+	}
+}
