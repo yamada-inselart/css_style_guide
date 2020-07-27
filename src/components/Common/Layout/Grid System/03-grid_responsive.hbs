@@ -1,9 +1,10 @@
-<p class="u-mb30">レスポンシブ用グリッドを設定します。<br>
+<p class="u-mb10">レスポンシブ用グリッドを設定します。<br>
 各カラム(子要素)に<br>
 タブレット(約1024px以下)の場合 .l-grid_item-(カラム数)-tab<br>
 スマホ以下(約640px以下)の場合 .l-grid_item-(カラム数)-sp<br>
 を設定します。
 </p>
+<p class="u-mb30">ガターは、.l-gutter-(サイズ)-tab .l-gutter-(サイズ)-sp でレスポンシブ対応します。</p>
 
 <p>タブレット以下で、レイアウト変更</p>
 <ul class="l-grid l-grid-example u-mb30">
@@ -29,7 +30,7 @@
 </ul>
 
 <p>タブレット以下とスマホ以下で、それぞれレイアウト変更</p>
-<ul class="l-grid l-grid-example">
+<ul class="l-grid l-grid-example u-mb30">
 	<li class="l-grid_item l-grid_item-1 l-grid_item-3-tab l-grid_item-6-sp">
 		<div class="grid_content">1カラム</div>
 	</li>
@@ -65,5 +66,18 @@
 	</li>
 	<li class="l-grid_item l-grid_item-1 l-grid_item-3-tab l-grid_item-6-sp">
 		<div class="grid_content">1カラム</div>
+	</li>
+</ul>
+
+<p>PCはLサイズガター、タブレットはMサイズガター、スマホはSサイズガターに設定</p>
+<ul class="l-grid l-gutter-l l-gutter-m-tab l-gutter-s-sp l-grid-example">
+	<li class="l-grid_item l-grid_item-4">
+		<div class="grid_content">4カラム</div>
+	</li>
+	<li class="l-grid_item l-grid_item-4">
+		<div class="grid_content">4カラム</div>
+	</li>
+	<li class="l-grid_item l-grid_item-4">
+		<div class="grid_content">4カラム</div>
 	</li>
 </ul>
