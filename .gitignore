@@ -7,3 +7,4 @@ Thumbs.db
 .history/
 .sass-cache/
 node_modules/
+build/

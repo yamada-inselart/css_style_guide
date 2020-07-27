@@ -14,8 +14,8 @@ fractal.docs.set('path', __dirname + '/src/docs');
 
 /* 読み込む外部CSSの指定 (変更する場合は監視をリセットする) */
 fractal.web.set('server.sync', true);
-fractal.web.set('static.path', __dirname + '/oocss/css');
+fractal.web.set('static.path', __dirname + '/css');
 fractal.web.set('static.mount', 'css');
 
 /* 静的HTMLに書き出すディレクトリ名の設定 */
-fractal.web.set('builder.dest', __dirname + '/library');
+fractal.web.set('builder.dest', __dirname + '/build');
