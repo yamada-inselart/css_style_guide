@@ -1,5 +1,7 @@
 # css_style_guide
 
+template Ver3.x.x まで対応
+
 【参考URL】
 ・初期設定
 　https://parashuto.com/rriver/tools/getting-started-with-fractal
