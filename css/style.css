@@ -286,6 +286,62 @@ img {
 	u-* (utilityのu)という接頭辞をつけることを推奨します。
 
 ----------------------------------------------------*/
+.u-txt-bold {
+  font-weight: bold !important;
+}
+
+.u-txt-xsmall {
+  font-size: 10px !important;
+  font-size: 1rem !important;
+}
+
+.u-txt-small {
+  font-size: 12px !important;
+  font-size: 1.2rem !important;
+}
+
+.u-ul-default {
+  margin: 1em 0;
+  padding-left: 40px;
+  list-style-type: disc;
+}
+.u-ul-default li {
+  list-style: inherit;
+}
+
+.u-ol-default {
+  margin: 1em 0;
+  padding-left: 40px;
+  list-style-type: decimal;
+}
+.u-ol-default li {
+  list-style: inherit;
+}
+
+.u-ul-style li {
+  position: relative;
+  padding-left: 1.2em;
+}
+.u-ul-style li::before {
+  content: "・";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.u-ul-style--asterisk li::before {
+  content: "※";
+}
+.u-ul-style--disc li::before {
+  content: "●";
+}
+.u-ul-style--number li {
+  counter-increment: number;
+}
+.u-ul-style--number li::before {
+  content: counter(number) ".";
+}
+
 .u-align-l {
   text-align: left !important;
 }
