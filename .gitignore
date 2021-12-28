@@ -2,6 +2,7 @@
 Thumbs.db
 .Ds_Store
 .gitignore
+package-lock.json
 
 #directory ignore
 .history/
