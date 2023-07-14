@@ -1,0 +1,43 @@
+  <p>.a-slide-box-01で画像スライドのアニメーションを設定できます。<br>モディファイアでスライドの方向を指定できます。（デフォルトは、.a-slide-box-01--t の動きになります。）</p>
+
+  <div>
+    <div class="a-slide-box-01 a-slide-box-01--t">
+      <img src="{{path '/img/sample.jpg'}}" alt="" />
+    </div>
+
+    <div class="a-slide-box-01 a-slide-box-01--r">
+      <img src="{{path '/img/sample.jpg'}}" alt="" />
+    </div>
+
+    <div class="a-slide-box-01 a-slide-box-01--b">
+      <img src="{{path '/img/sample.jpg'}}" alt="" />
+    </div>
+
+    <div class="a-slide-box-01 a-slide-box-01--l">
+      <img src="{{path '/img/sample.jpg'}}" alt="" />
+    </div>
+  </div>
+
+
+<style>
+  .a-slide-box-01 {
+    margin: 20px 10px;
+    max-width: 300px;
+    display: inline-block;
+  }
+</style>
+<script>
+  $(function() {
+    $('.a-slide-box-01--t').addClass('active');
+    setTimeout(()=> {
+      $('.a-slide-box-01--r').addClass('active');
+    }, 1000);
+    setTimeout(()=> {
+      $('.a-slide-box-01--b').addClass('active');
+    }, 2000);
+    setTimeout(()=> {
+      $('.a-slide-box-01--l').addClass('active');
+    }, 3000);
+
+  });
+</script>

@@ -1,0 +1,47 @@
+  <p>.a-slide-box-02で画像スライドのアニメーションを設定できます。<br>モディファイアでスライドの方向を指定できます。（デフォルトは、.a-slide-box-02--t の動きになります。）</p>
+
+  <div>
+    <div class="a-slide-box-02 a-slide-box-02--t">
+      <div class="slide-box-02__bg">
+        <img src="{{path '/img/sample.jpg'}}" alt="" />
+      </div>
+    </div>
+    <div class="a-slide-box-02 a-slide-box-02--r">
+      <div class="slide-box-02__bg">
+        <img src="{{path '/img/sample.jpg'}}" alt="" />
+      </div>
+    </div>
+    <div class="a-slide-box-02 a-slide-box-02--b">
+      <div class="slide-box-02__bg">
+        <img src="{{path '/img/sample.jpg'}}" alt="" />
+      </div>
+    </div>
+    <div class="a-slide-box-02 a-slide-box-02--l">
+      <div class="slide-box-02__bg">
+        <img src="{{path '/img/sample.jpg'}}" alt="" />
+      </div>
+    </div>
+  </div>
+
+
+<style>
+  .a-slide-box-02 {
+    margin: 20px 10px;
+    max-width: 300px;
+    display: inline-block;
+  }
+</style>
+<script>
+  $(function() {
+    $('.a-slide-box-02--t').addClass('active');
+    setTimeout(()=> {
+      $('.a-slide-box-02--r').addClass('active');
+    }, 1000);
+    setTimeout(()=> {
+      $('.a-slide-box-02--b').addClass('active');
+    }, 2000);
+    setTimeout(()=> {
+      $('.a-slide-box-02--l').addClass('active');
+    }, 3000);
+  });
+</script>
