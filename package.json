@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "fractal start --sync",
+    "build": "fractal build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@frctl/fractal": "^1.5.11"
+    "@frctl/fractal": "^1.5.15"
   },
   "fractal": {
     "main": "fractalfile.js"
